@@ -1,0 +1,10 @@
+{
+    "syspath": "~/crimac_unet/",
+    "path_to_echograms": "/scratch/disk5/ahmet/data/",
+    "path_to_korona_data": "",
+    "path_to_korona_transducer_depths": "",
+    "path_to_trained_model": "",
+    "path_to_zarr_files": "/scratch/disk5/ahmet/data/",
+    "path_for_saving_figs": "/scratch/disk5/ahmet/dino_output/unet_figures",
+    "path_for_saving_preds_labels": "/scratch/disk5/ahmet/dino_output/unet_figures"
+}
