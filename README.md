@@ -27,15 +27,22 @@ This repository implements a Self-Supervised Learning (SSL) model designed speci
 ## Prerequisites
 
 - numpy~=1.26.2
-- matplotlib~=3.8.2
-- pandas~=2.1.4
-- scipy~=1.13.1
-- torch~=2.5.0
+- matplotlib~=3.8.1
+- xarray~=0.20.0
+- pandas~=1.2.3
+- scipy~=1.11.3
+- torch~=2.0.1
 - PyYAML~=6.0.1
-- Pillow~=10.1.0
-- scikit-learn~=1.5.2
-- tqdm~=4.66.5
-- requests~=2.31.0
+- Pillow~=10.0.1
+- torchvision~=0.16.1
+- tqdm~=4.66.1
+- joblib~=1.3.2
+- scikit-learn~=1.3.2
+- zarr~=2.6.1
+- numcodecs~=0.12.1
+- opencv-python~=4.8.1.78
+- requests~=2.28.1
+- scikit-image~=0.22.0
 
 ## Usage
 
