@@ -4,6 +4,19 @@ This repository contains the implementation of self-supervised learning methods 
 
 ## Main Model Overview
 
+This repository implements a Self-Supervised Learning (SSL) model designed specifically for acoustic data analysis. The training process involves the following steps:
+
+1. **Data Preparation**: Extract acoustic data patches from the training dataset using a predefined sampling scheme to form the training set.
+2. **View Generation**: For each patch `x`, generate two global views and eight local views, forming sets `V_G` and `V_L`. The views are chosen in pairs from the combined set `V` for training.
+3. **Network Assignment**:
+   - The **teacher network** receives only global views (`V_G`).
+   - The **student network** can receive both global and local views (`V`).
+4. **Training Mechanism**: The teacher and student networks align their outputs by minimizing the dissimilarity between the chosen views.
+5. **Parameter Updates**: 
+   - **Student network** parameters (`θ_s`) are updated using the AdamW optimizer.
+   - **Teacher network** parameters (`θ_t`) are updated using an exponential moving average (EMA) technique.
+
+
 ![SSL Model Overview](SSL_Framework_Figure_NEW.jpg)
 
 *Figure: Overview of the self-supervised learning model applied in the study.*
