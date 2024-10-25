@@ -27,7 +27,7 @@ This repository implements a Self-Supervised Learning (SSL) model designed speci
 ## Prerequisites
 
 - numpy~=1.26.2
--  matplotlib~=3.8.2
+- matplotlib~=3.8.2
 - pandas~=2.1.4
 - scipy~=1.13.1
 - torch~=2.5.0
