@@ -17,7 +17,7 @@ This repository implements a Self-Supervised Learning (SSL) model designed speci
    - **Teacher network** parameters (`θ_t`) are updated using an exponential moving average (EMA) technique.
 
 
-![SSL Model Overview](SSL_Framework_Figure_NEW.jpg)
+![SSL Model Overview](utils_unet/SSL_Framework_Figure_NEW.jpg)
 
 *Figure: Overview of the self-supervised learning model applied in the study.*
 
