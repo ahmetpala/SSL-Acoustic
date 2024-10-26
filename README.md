@@ -94,6 +94,7 @@ This repository implements a Self-Supervised Learning (SSL) model designed speci
    - **UNET Results**: Run `UNET_Predictions_Reading.ipynb` to view and analyze predictions from the UNET model.
 
 - **Note:** Before running the scripts, make sure to update the data directory paths as needed in each script or notebook to reflect your local file structure.
+
 ## Data Availability
 
 The datasets used in this project are securely stored on servers managed by the Institute of Marine Research (IMR). Due to the large size of the dataset, access can be requested by contacting the corresponding author for an S3 access token. Please refer to the manuscript for detailed information on the dataset.
