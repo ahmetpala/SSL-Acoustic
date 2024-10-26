@@ -76,16 +76,16 @@ This repository implements a Self-Supervised Learning (SSL) model designed speci
 
 ## Usage
 
-1. **Labeling Non-Overlapping Patches**: Use the `Labeling_Survey_Patches.py` script to assign labels to patches created from survey data. This prepares the data for subsequent training tasks.
+1. **Labeling Non-Overlapping Patches**: Use the `Labeling_Survey_Patches.py` script to assign labels to patches created from each survey data. This prepares the metadata containing the center coordinates and average Sv values for intensity-based sampling and training tasks.
 
-2. **Training Data Creation**: Run the Jupyter notebook in `Training_Data_Creation/` to generate detailed training datasets using specified sampling strategies. This includes generating patches and defining sampling coordinates.
+2. **Training Data Creation**: Run the Jupyter notebook in `Training_Data_Creation/` to identify the center coordinates and survey year of patches selected based on intensity-based sampling scheme.
 
 3. **Extracting Training Data Patches**: Use the script `Producing_Training_Data_Python_IntensityBased2.py` to extract data patches based on specified criteria, preparing them for model training.
 
 4. **Training SSL Model**: Train the model using `main_dino_acoustic_FixedData.py`. This script initiates the training process and saves the trained model.
 
 5. **Feature Extraction**:
-   - **Produce Data Patches**: For specific years or datasets, generate test patches by running scripts such as `Producing_Annotation_Patches_Test_Data_2017_Python.py`.
+   - **Produce Data Patches**: For specific survey year, generate test patches by running scripts such as `Producing_Annotation_Patches_Test_Data_2017_Python.py`.
    - **Extract and Save Features**: Run `extract_features_acoustic_FixedData.py` to extract features from patches based on the trained model.
 
 6. **Model Evaluation**:
