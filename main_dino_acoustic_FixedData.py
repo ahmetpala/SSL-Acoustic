@@ -140,7 +140,7 @@ def get_args_parser():
         distributed training; see https://pytorch.org/docs/stable/distributed.html""")
     parser.add_argument("--local_rank", default=0, type=int, help='Please ignore and do not set this argument.')
     parser.add_argument("--sampling_strategy", default='YENI_Intensity_Based', type=str,
-        choices=['YENI_Intensity_Based', 'Balanced', 'Complete_Random'], help="""Sampling strategy for acoustic data""")
+        choices=['Intensity_Based2', 'Balanced', 'Complete_Random'], help="""Sampling strategy for acoustic data""")
 
     return parser
 
@@ -165,24 +165,9 @@ def train_dino(args):
     elif args.sampling_strategy == 'Intensity_Based2':
         custom_dataset = CustomDataset(data=np.load('/scratch/disk5/ahmet/data/8w_Sampled_Data_9Years/Intensity_Based2/data_8w_IntensityBased2FIXED_16Batch_200Ep_100Iter_320000_FIXED.npy'))
         print('FIXED INTENSITY BASED2 SAMPLER')
-    elif args.sampling_strategy == 'Intensity_Based3':
-        custom_dataset = CustomDataset(data=np.load('/scratch/disk5/ahmet/data/8w_Sampled_Data_9Years/Intensity_Based3/data_8w_IntensityBased3_16Batch_200Ep_100Iter_320000.npy')) # without tail, 95% quantile, 5 bins
-        print('FIXED INTENSITY BASED3 SAMPLER')
-    elif args.sampling_strategy == 'Intensity_Based4':
-        custom_dataset = CustomDataset(data=np.load('/scratch/disk5/ahmet/data/8w_Sampled_Data_9Years/Intensity_Based4/data_8w_IntensityBased4_16Batch_200Ep_100Iter_320000.npy')) # with tail, 95% quantile, 6 bins
-        print('FIXED INTENSITY BASED4 SAMPLER')
     elif args.sampling_strategy == 'Complete_Random':
         custom_dataset = CustomDataset(data=np.load('/scratch/disk5/ahmet/data/8w_Sampled_Data_9Years/Random/data_8w_RANDOM_16Batch_200Ep_100Iter_320000.npy'))
         print('COMPLETE RANDOM SAMPLER')
-    elif args.sampling_strategy == 'YENI_Intensity_Based3':
-        custom_dataset = CustomDataset(data=np.load('/scratch/disk5/ahmet/data/8w_Sampled_Data_9Years/YENI_Intensity_Based3/YENI_data_8w_IntensityBased3_16Batch_200Ep_100Iter_320000.npy'))
-        print('FIXED YENI INTENSITY BASED3 SAMPLER')
-    elif args.sampling_strategy == 'YENI_Intensity_Based4':
-        custom_dataset = CustomDataset(data=np.load('/scratch/disk5/ahmet/data/8w_Sampled_Data_9Years/YENI_Intensity_Based4/YENI_data_8w_IntensityBased4_16Batch_200Ep_100Iter_320000.npy'))
-        print('FIXED YENI INTENSITY BASED4 SAMPLER')
-    elif args.sampling_strategy == 'YENI_Intensity_Based':
-        custom_dataset = CustomDataset(data=np.load('/scratch/disk5/ahmet/data/8w_Sampled_Data_9Years/YENI_Intensity_Based/data_8w_IntensityBased_16Batch_200Ep_100Iter_320000.npy'))
-        print('FIXED YENI INTENSITY BASED (ILK OLAN) SAMPLER')
     else:
         raise FileNotFoundError(
             f'Undefined sampling strategy for acoustic data: {args.sampling_strategy}')

@@ -13,7 +13,8 @@ plt.rcParams["axes.grid"] = False
 
 start_time = time.time()
 
-sampling_strategy_acoustic = 'Intensity_Based'
+sampling_strategy_acoustic = 'Complete_Random'
+print(sampling_strategy_acoustic)
 window_size = [8, 8]
 num_workers = 0
 batch_size_per_gpu = 16

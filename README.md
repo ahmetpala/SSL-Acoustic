@@ -23,6 +23,36 @@ This repository implements a Self-Supervised Learning (SSL) model designed speci
 
 ## Repository Structure
 
+- **batch**: Contains submodules for organizing batch processing and data transformation tasks. Key subfolders include:
+  - **data_augmentation/**: Houses scripts that perform various data augmentation techniques to improve model generalization.
+  - **data_transforms/**: Contains scripts for performing transformations on input data to prepare it for training.
+  - **label_transforms/**: Scripts focused on transforming and handling label data appropriately.
+  - **samplers/**: Contains modules for defining custom sampling strategies used during training.
+
+
+- **data/**: Includes Python modules responsible for reading and managing datasets. This folder contains utility scripts used for handling data from external sources or preprocessed files:
+  - **data_reader.py**: Script for reading and parsing raw data files.
+  - **dataloaders.py**: Contains functions to create data loaders for efficient batch processing during training.
+  - **partition.py**: Helps split datasets based on a specified partitioning scheme.
+
+- **Jupyter_Notebooks/**: Contains Jupyter notebooks for demonstrating and documenting different steps in the training, testing, and analysis processes. Key notebooks include:
+  - **Training_Data_Creation/**: Contains notebook related to generating training datasets and conducting experiments.
+  - **Final_Tests.ipynb**: Evaluates model performance and provides visual insights into the results.
+  - **Echogram_Painting_Code.ipynb**: Notebooks for visualizing echograms with labeled regions or features of interest.
+  - **UNET_Predictions_Reading.ipynb**: A notebook to read and evaluate the predictions made by the UNet model.
+
+- **utils_unet/**: Contains utility scripts and helper functions that support model development and data processing tasks. 
+
+- **Modules Outside Main Folders**
+
+  - **Labeling_Survey_Patches.py**: Assigns labels to survey patches for creating labeled datasets.
+
+  - **main_dino_acoustic_FixedData.py**: Implements the DINO-inspired SSL model and manages the main training loop.
+
+  - **modified_resnet_*.py**: Defines customized ResNet architectures for extracting acoustic features with varying output configurations.
+
+  - **extract_features_acoustic_FixedData.py**: Extracts features from acoustic datasets using the trained self-supervised model for downstream tasks.
+
 
 ## Prerequisites
 
@@ -46,7 +76,24 @@ This repository implements a Self-Supervised Learning (SSL) model designed speci
 
 ## Usage
 
+1. **Labeling Non-Overlapping Patches**: Use the `Labeling_Survey_Patches.py` script to assign labels to patches created from survey data. This prepares the data for subsequent training tasks.
 
+2. **Training Data Creation**: Run the Jupyter notebook in `Training_Data_Creation/` to generate detailed training datasets using specified sampling strategies. This includes generating patches and defining sampling coordinates.
+
+3. **Extracting Training Data Patches**: Use the script `Producing_Training_Data_Python_IntensityBased2.py` to extract data patches based on specified criteria, preparing them for model training.
+
+4. **Training SSL Model**: Train the model using `main_dino_acoustic_FixedData.py`. This script initiates the training process and saves the trained model.
+
+5. **Feature Extraction**:
+   - **Produce Data Patches**: For specific years or datasets, generate test patches by running scripts such as `Producing_Annotation_Patches_Test_Data_2017_Python.py`.
+   - **Extract and Save Features**: Run `extract_features_acoustic_FixedData.py` to extract features from patches based on the trained model.
+
+6. **Model Evaluation**:
+   - **Test Results and Visualizations**: Run `Final_Tests.ipynb` to assess model performance and visualize key results.
+   - **Evaluate Raw Data**: Use `Testing_Pixel_Based_KNN.ipynb` to analyze the model’s results on raw acoustic data.
+   - **UNET Results**: Run `UNET_Predictions_Reading.ipynb` to view and analyze predictions from the UNET model.
+
+- **Note:** Before running the scripts, make sure to update the data directory paths as needed in each script or notebook to reflect your local file structure.
 ## Data Availability
 
 The datasets used in this project are securely stored on servers managed by the Institute of Marine Research (IMR). Due to the large size of the dataset, access can be requested by contacting the corresponding author for an S3 access token. Please refer to the manuscript for detailed information on the dataset.
