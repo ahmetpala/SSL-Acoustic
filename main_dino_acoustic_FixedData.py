@@ -140,7 +140,7 @@ def get_args_parser():
         distributed training; see https://pytorch.org/docs/stable/distributed.html""")
     parser.add_argument("--local_rank", default=0, type=int, help='Please ignore and do not set this argument.')
     parser.add_argument("--sampling_strategy", default='YENI_Intensity_Based', type=str,
-        choices=['Balanced', 'Complete_Random'], help="""Sampling strategy for acoustic data""")
+        choices=['YENI_Intensity_Based', 'Balanced', 'Complete_Random'], help="""Sampling strategy for acoustic data""")
 
     return parser
 
