@@ -47,9 +47,9 @@ class DataReaderZarr():
         self.work_path = os.path.join(*[self.path, f'{self.name}_labels.parquet'])
         self.objects_df_path = os.path.join(*[self.path, f'{self.name}_labels.parquet.csv'])
 
-        self.distances_df_path = os.path.join(*[self.path, f'{self.name}_distances.pkl'])  # AHMET
-        self.distances = pd.read_pickle(self.distances_df_path)  # AHMET
-        self.n_sandeel = None  # AHMET
+        #self.distances_df_path = os.path.join(*[self.path, f'{self.name}_distances.pkl'])  # AHMET
+        #self.distances = pd.read_pickle(self.distances_df_path)  # AHMET
+        #self.n_sandeel = None  # AHMET
         #try:
         #    self.patch_data_array_all = np.load(os.path.join(*[self.path, f'{self.name}_patch_data_array_all_8w.npy']),allow_pickle=True)
         #    # Find the indices of rows with 'ignore' in the 'label' column
