@@ -23,7 +23,7 @@ This repository implements a Self-Supervised Learning (SSL) model designed speci
 
 ## Repository Structure
 
-- **batch**: Contains submodules for organizing batch processing and data transformation tasks. Key subfolders include:
+- **batch/**: Contains submodules for organizing batch processing and data transformation tasks. Key subfolders include:
   - **data_augmentation/**: Houses scripts that perform various data augmentation techniques to improve model generalization.
   - **data_transforms/**: Contains scripts for performing transformations on input data to prepare it for training.
   - **label_transforms/**: Scripts focused on transforming and handling label data appropriately.
