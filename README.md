@@ -97,7 +97,7 @@ This repository implements a Self-Supervised Learning (SSL) model designed speci
 
 ## Data Availability
 
-The datasets used in this project are securely stored on servers managed by the Institute of Marine Research (IMR). Due to the large size of the dataset, access can be requested by contacting the corresponding author for an S3 access token. Please refer to the manuscript for detailed information on the dataset.
+The data used in this study are securely stored on servers managed by the Institute of Marine Research (IMR). Due to its extenive size (as cetailed in the Supplementary Material), access can be granted via an Amazon S3 access token upon request, in accordance with IMR’s data-sharing policies. Detailed information about the dataset's size, structure, and metadata is included in the Supplementary Material to further facilitate reproducibility.
 
 ## Contact
 
