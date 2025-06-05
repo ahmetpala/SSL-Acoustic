@@ -89,6 +89,29 @@ This repository implements a Self-Supervised Learning (SSL) model designed speci
 
 The data used in this study are securely stored on servers managed by the Institute of Marine Research (IMR). Due to its extenive size (as cetailed in the Supplementary Material), access can be granted via an Amazon S3 access token upon request, in accordance with IMR’s data-sharing policies. Detailed information about the dataset's size, structure, and metadata is included in the Supplementary Material to further facilitate reproducibility.
 
+## Citation
+
+If you use this repository or build upon this work, please cite the following paper:
+
+> Pala, A., Oleynik, A., Handegard, N.O. (2024). Self-supervised feature learning for acoustic data analysis. *Ecological Informatics*, 80, 102533.
+> [https://doi.org/10.1016/j.ecoinf.2024.102533](https://doi.org/10.1016/j.ecoinf.2024.102533)
+
+### BibTeX
+
+```bibtex
+@article{pala2024sslacoustic,
+  title = {Self-supervised feature learning for acoustic data analysis},
+  author = {Pala, Ahmet and Oleynik, Anna and Handegard, Nils Olav},
+  journal = {Ecological Informatics},
+  volume = {80},
+  pages = {102533},
+  year = {2024},
+  publisher = {Elsevier},
+  doi = {10.1016/j.ecoinf.2024.102533}
+}
+```
+
+
 ## Contact
 
 For questions or collaboration inquiries, please reach out to the corresponding author, Ahmet Pala.
