@@ -3,8 +3,14 @@ message: "If you use this software, please cite the following paper."
 authors:
   - family-names: Pala
     given-names: Ahmet
+  - family-names: Oleynik
+    given-names: Anna
+  - family-names: Handegard
+    given-names: Nils Olav
 title: "Self-supervised feature learning for acoustic data analysis"
 doi: 10.1016/j.ecoinf.2024.102878
 date-released: 2024-12-01
+url: https://www.sciencedirect.com/science/article/pii/S1574954124004205
+repository: https://github.com/ahmetpala/SSL-Acoustic
 version: "1.0"
 type: article
