@@ -11,6 +11,5 @@ title: Self-supervised feature learning for acoustic data analysis
 doi: https://doi.org/10.1016/j.ecoinf.2024.102878
 date-released: 2024-12-01
 url: https://www.sciencedirect.com/science/article/pii/S1574954124004205
-version: "1.0"
 type: article
 repository-code: https://github.com/ahmetpala/SSL-Acoustic.git
