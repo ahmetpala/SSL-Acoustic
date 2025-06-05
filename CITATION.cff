@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the following paper."
+authors:
+  - family-names: Pala
+    given-names: Ahmet
+  - family-names: Oleynik
+    given-names: Anna
+  - family-names: Handegard
+    given-names: Nils Olav
+title: Self-supervised feature learning for acoustic data analysis
+doi: 10.1016/j.ecoinf.2024.102533
+date-released: 2024-05-24
+url: https://www.sciencedirect.com/science/article/pii/S1574954124004205
+version: "1.0"
+type: article
+repository-code: https://github.com/your-org/your-repo-name
