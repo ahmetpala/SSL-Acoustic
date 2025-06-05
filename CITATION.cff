@@ -8,8 +8,8 @@ authors:
   - family-names: Handegard
     given-names: Nils Olav
 title: Self-supervised feature learning for acoustic data analysis
-doi: 10.1016/j.ecoinf.2024.102533
-date-released: 2024-05-24
+doi: https://doi.org/10.1016/j.ecoinf.2024.102878
+date-released: 2024-12-01
 url: https://www.sciencedirect.com/science/article/pii/S1574954124004205
 version: "1.0"
 type: article
