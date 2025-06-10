@@ -190,18 +190,6 @@ def train_dino(args):
     print(
         f"Data loaded: there are {len(custom_dataset)} acoustic data patches.")
 
-    # dataset = datasets.ImageFolder(args.data_path, transform=transform)
-    # sampler = torch.utils.data.DistributedSampler(dataset, shuffle=True)
-   # data_loader = torch.utils.data.DataLoader(
-   #     dataset,
-   #     sampler=sampler,
-   #     batch_size=args.batch_size_per_gpu,
-   #     num_workers=args.num_workers,
-   #     pin_memory=True,
-   #     drop_last=True)
-
-    # print(f"Data loaded: there are {len(dataset)} images.")
-
     # ============ building student and teacher networks ... ============
     # we changed the name DeiT-S for ViT-S to avoid confusions
     args.arch = args.arch.replace("deit", "vit")
