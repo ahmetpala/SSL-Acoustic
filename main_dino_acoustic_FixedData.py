@@ -27,8 +27,8 @@ import torch.nn as nn
 import torch.distributed as dist
 import torch.backends.cudnn as cudnn
 import torch.nn.functional as F
-from torchvision import datasets, transforms
-from torchvision.transforms import InterpolationMode, functional
+from torchvision import transforms
+from torchvision.transforms import InterpolationMode
 from torchvision import models as torchvision_models
 from torch.utils.data import Dataset, DataLoader
 
@@ -190,7 +190,7 @@ def train_dino(args):
     print(
         f"Data loaded: there are {len(custom_dataset)} acoustic data patches.")
 
-    # ============ building student and teacher networks ... ============
+    # ============ building student and teacher networks ... ======0======
     # we changed the name DeiT-S for ViT-S to avoid confusions
     args.arch = args.arch.replace("deit", "vit")
     # if the network is a Vision Transformer (i.e. vit_tiny, vit_small, vit_base)
