@@ -25,7 +25,6 @@ from batch.samplers.seabed import SeabedZarr
 from batch.samplers.school import SchoolZarr
 from batch.samplers.school_seabed import SchoolSeabedZarr
 from batch.samplers.gridded import Gridded
-from batch.samplers.ahmet_background import BackgroundZarr_ahmet
 from batch.samplers.gridded_portion import GriddedPortion
 from batch.samplers.gridded_predefined_all_locations import GriddedPreDefinedAll
 from batch.samplers.intensity_based import IntensityBased
