@@ -1,5 +1,24 @@
 # Self-supervised feature learning for acoustic data analysis
 
+![Python](https://img.shields.io/badge/python-3.13%2B-blue)
+![NumPy](https://img.shields.io/badge/NumPy-1.26.2-orange)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3.8.1-orange)
+![Xarray](https://img.shields.io/badge/Xarray-0.20.0-orange)
+![Pandas](https://img.shields.io/badge/Pandas-1.2.3-orange)
+![SciPy](https://img.shields.io/badge/SciPy-1.11.3-orange)
+![Torch](https://img.shields.io/badge/Torch-2.0.1-orange)
+![PyYAML](https://img.shields.io/badge/PyYAML-6.0.1-orange)
+![Pillow](https://img.shields.io/badge/Pillow-10.0.1-orange)
+![TorchVision](https://img.shields.io/badge/TorchVision-0.16.1-orange)
+![TQDM](https://img.shields.io/badge/TQDM-4.66.1-orange)
+![Joblib](https://img.shields.io/badge/Joblib-1.3.2-orange)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.3.2-orange)
+![Zarr](https://img.shields.io/badge/Zarr-2.6.1-orange)
+![Numcodecs](https://img.shields.io/badge/Numcodecs-0.12.1-orange)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.8.1.78-orange)
+![Requests](https://img.shields.io/badge/Requests-2.28.1-orange)
+![Scikit-image](https://img.shields.io/badge/Scikit--image-0.22.0-orange)
+
 This repository contains the implementation of self-supervised learning methods for acoustic data analysis, focusing on fisheries echosounder data. The primary goal of this study was to develop a deep learning model inspired by the DINO architecture to extract acoustic features without requiring manual annotations. The model was trained using multiple data sampling strategies to address class imbalance and improve the discriminative power of features in downstream tasks such as classification and regression.
 
 ## Main model overview
